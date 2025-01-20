@@ -5,19 +5,19 @@ entity EmailNotification {
         errortype        : String(32);
         productline      : String(32);
         packagename      : String(64);
-        iflowname        : String(64);
+    key iflowname        : String(64);
         ordercompany     : String(16);
         toemailaddresses : String(255);
         ccemailaddresses : String(255);
         emailsubject     : String(255);
         lastupdatedby    : String(64);
-        lastupdatedtime  : DateTime;
+        lastupdatedtime  : DateTime default current_timestamp;
 
 }
 
 entity ErrorCodeXref {
     key errorcode        : String(16);
-        errordescription : String(64);
+        errordescription : String(255);
         lastupdatedby    : String(64);
         lastupdatedtime  : DateTime;
 }

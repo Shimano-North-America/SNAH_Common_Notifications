@@ -1,18 +1,18 @@
 {
   "xsappname": "SNAH_Common_Notification",
-"tenant-mode": "dedicated",
+  "tenant-mode": "dedicated",
   "scopes": [],
   "attributes": [],
   "role-templates": [],
   "authorities-inheritance": false,
   "oauth2-configuration": {
     "credential-types": [
-        "binding-secret",
-        "x509"
+      "binding-secret",
+      "x509"
     ],
     "redirect-uris": [
-        "https://*.applicationstudio.cloud.sap/**",
-        "https://*.cfapps.us20.hana.ondemand.com/**"
+      "https://*.applicationstudio.cloud.sap/**",
+      "https://*.cfapps.us20.hana.ondemand.com/**"
     ]
-}
+  }
 }

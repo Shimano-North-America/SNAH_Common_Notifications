@@ -25,7 +25,7 @@ modules:
         properties:
           srv-url: ${default-url}
     requires:
-      - name: SNAH_Common_Notification-auth
+      - name: SNAH_B2B_Common_oAuth
       - name: SNAH_Common_Notification-db
 
   - name: SNAH_Common_Notification-db-deployer
@@ -50,10 +50,10 @@ modules:
           name: srv-api # must be used in xs-app.json as well
           url: ~{srv-url}
           forwardAuthToken: true
-      - name: SNAH_Common_Notification-auth
+      - name: SNAH_B2B_Common_oAuth
 
 resources:
-  - name: SNAH_Common_Notification-auth
+  - name: SNAH_B2B_Common_oAuth
     type: org.cloudfoundry.managed-service
     parameters:
       service: xsuaa

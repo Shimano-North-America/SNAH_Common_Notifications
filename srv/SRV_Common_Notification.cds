@@ -4,7 +4,7 @@ service CatalogEmailNotification {
       @requires: 'authenticated-user'
     entity EmailNotification as projection on Notification.EmailNotification;
      @requires: 'authenticated-user'
-    entity EmailDescription as projection on Notification.ErrorCodeXref
+    entity EmailDescription as projection on Notification.ErrorCodeXref;
      @requires: 'authenticated-user'
     entity emaildescriptionView  as projection on Notification.ERROREMAILNOTIFICATION_V
 
