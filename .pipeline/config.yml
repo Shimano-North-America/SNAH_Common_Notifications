@@ -1,7 +1,7 @@
 ### General project setup
 general:
   inferBuildTool: true
-  gitHttpsCredentialsId: "github-pat"
+  gitHttpsCredentialsId: "CTM_token"
 
 ### Step-specific configuration
 steps:
